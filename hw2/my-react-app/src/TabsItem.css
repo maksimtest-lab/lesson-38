@@ -1,0 +1,29 @@
+
+
+    .tabsItem-title {
+        background-color: #f0f0f0;
+        padding: 10px;
+        cursor: pointer;
+        order: 1;
+
+        &.active {
+            background-color: #ccc;
+        }
+    }
+
+    .tabsItem-content {
+        max-height: 0;
+        overflow: hidden;
+        /* transition: max-height 0.1s ease; */
+        flex-shrink: 0;
+        width: 100%;
+        order: 2;
+        position: absolute;
+
+        &.active {
+            max-height: 800px;
+            padding: 10px;
+            transition: max-height 1s ease;
+            position: static;
+        }
+    }
